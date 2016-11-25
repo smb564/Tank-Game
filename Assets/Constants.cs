@@ -8,6 +8,6 @@ namespace Assets
 {
     static class Constants
     {
-        public static Vector3[] DIRECTION = { Vector3.up, Vector3.right, Vector3.down, Vector3.right};
+        public static Vector3[] DIRECTION = { new Vector3(0,0,0), new Vector3(0,0,-90), new Vector3(0,0,180), new Vector3(0, 0, 90)};
     }
 }

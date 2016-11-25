@@ -111,10 +111,9 @@ public class HandleResponse
         Dispatcher.getInstance().invoke(
             () =>
             {
-                Debug.Log("Translate the player 1 into the middle");
                 GameObject gameObject = GameObject.Find(player);
                 gameObject.transform.position = new Vector3(float.Parse(cordinates.Split(',')[0]) - 4.5f, 4.5f - float.Parse(cordinates.Split(',')[1]), 0);
-                gameObject.transform.Rotate(Constants.DIRECTION[int.Parse(direction)]);
+                gameObject.transform.rotation = Quaternion.Euler(Constants.DIRECTION[int.Parse(direction)]);
 
                 // Show shot, health, coins, points
             }

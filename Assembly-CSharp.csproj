@@ -1,12 +1,11 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <RootNamespace>
-    </RootNamespace>
+    <RootNamespace></RootNamespace>
     <ProjectGuid>{99ACD914-AC1D-94EE-0B97-D65D28DC46E9}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
@@ -46,27 +45,25 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Connection.cs" />
-    <Compile Include="Assets\Constants.cs" />
-    <Compile Include="Assets\Dispatcher.cs" />
-    <Compile Include="Assets\DispatcherUpdate.cs" />
-    <Compile Include="Assets\HandleResponse.cs" />
-    <Compile Include="Assets\IDispatcher.cs" />
-    <Compile Include="Assets\PlayerScript.cs" />
-    <Compile Include="Assets\ServerConnection.cs" />
-    <None Include="Assets\Standard Assets\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />
-    <Reference Include="UnityEngine.UI">
-      <HintPath>F:/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.Networking">
-      <HintPath>F:/Unity/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
-    </Reference>
+     <Compile Include="Assets\Connection.cs" />
+     <Compile Include="Assets\Constants.cs" />
+     <Compile Include="Assets\Dispatcher.cs" />
+     <Compile Include="Assets\DispatcherUpdate.cs" />
+     <Compile Include="Assets\HandleResponse.cs" />
+     <Compile Include="Assets\IDispatcher.cs" />
+     <Compile Include="Assets\PlayerScript.cs" />
+     <Compile Include="Assets\ServerConnection.cs" />
+     <None Include="Assets\Standard Assets\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />
+ <Reference Include="UnityEngine.UI">
+ <HintPath>F:/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Networking">
+ <HintPath>F:/Unity/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
+ </Reference>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
-      <Project>{F3310D87-93D2-4097-760C-3FA523E01248}</Project>
-      <Name>Assembly-CSharp-firstpass</Name>
-    </ProjectReference>
+      <Project>{F3310D87-93D2-4097-760C-3FA523E01248}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
@@ -76,4 +73,5 @@
   <Target Name="AfterBuild">
   </Target>
   -->
+  
 </Project>
